@@ -445,6 +445,7 @@ else
     ifneq ($(wildcard external/unzip/Android.mk),)
         LOCAL_REQUIRED_MODULES += unzip
     endif
+    LOCAL_REQUIRED_MODULES += sh_recovery mkshrc_recovery
 endif
 
 ifneq ($(TW_NO_EXFAT), true)
@@ -846,6 +847,7 @@ include $(commands_TWRP_local_path)/injecttwrp/Android.mk \
     $(commands_TWRP_local_path)/minzip/Android.mk \
     $(commands_TWRP_local_path)/dosfstools/Android.mk \
     $(commands_TWRP_local_path)/etc/Android.mk \
+    $(commands_TWRP_local_path)/mksh/Android.mk \
     $(commands_TWRP_local_path)/toybox/Android.mk \
     $(commands_TWRP_local_path)/simg2img/Android.mk \
     $(commands_TWRP_local_path)/adbbu/Android.mk \
